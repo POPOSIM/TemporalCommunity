@@ -10,9 +10,9 @@ public class TemporalCommunities {
 	private LinkedList<Community> EachCommnities;
 	private LinkedList<Cover> EachCommnitiesCover;
 	private Connections Nowconnections;
-	public static final double cutdown = 6000;
+	public static final double cutdown = 3600;
 	private static final double SimilarityConstrain = 0.3; //控制相似
-	public static final int ConsecutiveConstrain = 5; //連續出現
+	public static final int ConsecutiveConstrain = 3; //連續出現
 	private double CurrentTime;
 	private int totalclusters;
 	private int totalCommnities;
@@ -66,7 +66,7 @@ public class TemporalCommunities {
 		System.out.println("Reading current network states to produce static graph...");
 		readdata(input);
 		System.out.println("Cluster Detection...");
-				
+				/*
 		FileWriter fr;
 		try {
 			fr = new FileWriter("01BeforeAggregation.txt");
@@ -108,7 +108,7 @@ public class TemporalCommunities {
 		} catch (IOException e) { // TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		
+		*/
 		for (Graph p : EachTemporalGraphs) {
 			Set<Clusting> c;
 			Louvain_Community L = new Louvain_Community(p);
