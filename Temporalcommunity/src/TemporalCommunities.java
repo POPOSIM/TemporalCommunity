@@ -10,9 +10,9 @@ public class TemporalCommunities {
 	private LinkedList<Community> EachCommnities;
 	private LinkedList<Cover> EachCommnitiesCover;
 	private Connections Nowconnections;
-	public static final double cutdown = 3600;
-	private static final double SimilarityConstrain = 0.3; //控制相似
-	public static final int ConsecutiveConstrain = 3; //連續出現
+	public static final double cutdown = 600;
+	private static final double SimilarityConstrain = 0.4; //控制相似
+	public static final int ConsecutiveConstrain = 4; //連續出現
 	private double CurrentTime;
 	private int totalclusters;
 	private int totalCommnities;
