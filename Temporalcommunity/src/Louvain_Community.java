@@ -221,10 +221,7 @@ public class Louvain_Community {
 		//System.out.println(ModQ);
 		//System.out.println("LevelTwo Done");
 	}
-	/*private void therelevel() {
-		
-	}*/
-	
+
 	private double modularity() {
 		double newmod = 0;
 		int globaldegree = 0;

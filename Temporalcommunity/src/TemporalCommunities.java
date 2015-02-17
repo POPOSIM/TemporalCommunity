@@ -11,8 +11,8 @@ public class TemporalCommunities {
 	private LinkedList<Cover> EachCommnitiesCover;
 	private Connections Nowconnections;
 	public static final double cutdown = 600;
-	private static final double SimilarityConstrain = 0.4; //控制相似
-	public static final int ConsecutiveConstrain = 4; //連續出現
+	private static final double SimilarityConstrain = 0.4;
+	public static final int ConsecutiveConstrain = 4;
 	private double CurrentTime;
 	private int totalclusters;
 	private int totalCommnities;
@@ -66,7 +66,7 @@ public class TemporalCommunities {
 		System.out.println("Reading current network states to produce static graph...");
 		readdata(input);
 		System.out.println("Cluster Detection...");
-				/*
+		/*
 		FileWriter fr;
 		try {
 			fr = new FileWriter("01BeforeAggregation.txt");
@@ -300,10 +300,10 @@ public class TemporalCommunities {
 								Ref1 = com1;
 								Ref2 = com2;
 								stable = false;
-								if (closest <= 0.000001) {
+								/*if (closest <= 0.000001) {
 									roundDone = true;
 									;
-								}
+								}*/
 							}
 						}
 					}

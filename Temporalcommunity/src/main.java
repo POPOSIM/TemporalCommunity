@@ -18,7 +18,7 @@ public class main {
 		List<String> mylist = new LinkedList<String>();
 
 		try {
-			String filepath = "contact.txt";
+			String filepath = "contacts.txt";
 			FileReader fr = new FileReader(filepath);
 			BufferedReader br = new BufferedReader(fr);
 			String s;
