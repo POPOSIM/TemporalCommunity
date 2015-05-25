@@ -11,7 +11,7 @@ public class TemporalCommunities {
 	private LinkedList<Cover> EachCommnitiesCover;
 	private Connections Nowconnections;
 	public static final double cutdown = 600;
-	private static final double SimilarityConstrain = 0.4;
+	private static final double SimilarityConstrain = 0.3;
 	public static final int ConsecutiveConstrain = 4;
 	private double CurrentTime;
 	private int totalclusters;
